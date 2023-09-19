@@ -13,7 +13,7 @@ $admin_bot = '@tel_fireSupportBot';
 
 /*======== sina alfa ========*/
 
-function bot($method,$datas=[]){
+function bot($method,$datas=[]){{
 
 $updaterl = "https://api.telegram.org/bot".API_KEY."/".$method;
 
