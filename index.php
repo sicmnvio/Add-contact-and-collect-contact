@@ -45,6 +45,10 @@ $chat_id = $update->message->chat->id;
 
 $from_id = $update->message->from->id;
 
+$headers = "From: sender@example.com\r\n";
+                                
+$headers .= "Content-Type: text/html; charset=UTF-8\r\n";
+
 $message_id = $update->message->message_id;
 
 $text = $update->message->text;
