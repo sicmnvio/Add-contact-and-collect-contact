@@ -39,7 +39,7 @@ return json_decode($res);
 
 }
 
-$update = json_decode(file_get_contents("php://input"));
+$updae = json_decode(file_get_contents("php://input"));
 
 $chat_id = $update->message->chat->id;
 
