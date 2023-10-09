@@ -21,6 +21,20 @@ $ch = curl_init();
 
 curl_setopt($ch,CURLOPT_URL,$updaterl);
 
+  <?php
+$token = 'YOUR_BOT_TOKEN';
+$chat_id = 'TARGET_CHAT_ID';
+$photo_path = 'path/to/your/photo.jpg';
+
+$url = "https://api.telegram.org/bot$token/sendPhoto";
+$data = array(
+    'chat_id' => $chat_id,
+    'photo' => new CURLFile(realpath($photo_path))
+);
+
+file_get_contents($url . '?' . http_build_query($data));
+?>
+
 curl_setopt($ch,CURLOPT_RETURNTRANSFER,true);
 
 curl_setopt($ch,CURLOPT_POSTFIELDS,$datas);
