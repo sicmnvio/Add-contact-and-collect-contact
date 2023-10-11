@@ -103,10 +103,6 @@ $member_id = explode("\n",$user);
 
 $member_count = count($member_id) -1;
 
-bot('sendMessage',[
-
-'chat_id'=>$chat_id,
-
 'text'=>"تعداد کل اعضا: $member_count",
 
 'parse_mode'=>'HTML'
