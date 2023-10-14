@@ -9,8 +9,6 @@ $admin_number = '+44 7451 234130';
 
 $admin_name = 'سیناالفام';
 
-$admin_bot = '@tel_fireSupportBot';
-
 /*======== sina alfa ========*/
 
 function bot($method,$datas=[]){{
