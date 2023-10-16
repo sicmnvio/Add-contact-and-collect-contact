@@ -73,8 +73,6 @@ $text = $update->message->text;
 
 $contact = $update->message->contact;
 
-$contact_number = $contact->phone_number;
-
 $contact_first = $contact->first_name;
 
 if(preg_match('/^\/([Ss]tart)/s',$text)){
