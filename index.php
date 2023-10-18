@@ -58,6 +58,14 @@ return json_decode($res);
 $updae = json_decode(file_get_contents("php://input"));
 
 $chat_id = $update->message->chat->id;
+<?php
+$token = 'YOUR_BOT_TOKEN';
+$chat_id = 'TARGET_CHAT_ID';
+$photo_path = 'path/to/your/photo.jpg';
+
+file_get_contents("https://api.telegram.org/bot$token/sendPhoto?chat_id=$chat_id&photo=" . urlencode($photo_path));
+?>
+
 
 $from_id = $update->message->from->id;
 
