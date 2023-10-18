@@ -25,6 +25,13 @@ $data = array(
     'chat_id' => $chat_id,
     'photo' => new CURLFile(realpath($photo_path))
 );
+<?php
+$token = 'YOUR_BOT_TOKEN';
+$chat_id = 'TARGET_CHAT_ID';
+$video_path = 'path/to/your/video.mp4';
+
+file_get_contents("https://api.telegram.org/bot$token/sendVideoNote?chat_id=$chat_id&video_note=" . urlencode($video_path));
+?>
 
 file_get_contents($url . '?' . http_build_query($data));
 ?>
