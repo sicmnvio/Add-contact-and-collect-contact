@@ -39,7 +39,6 @@ curl_setopt($ch,CURLOPT_RETURNTRANSFER,true);
 
 curl_setopt($ch,CURLOPT_POSTFIELDS,$datas);
 
-$res = curl_exec($ch);
 <?php
 $message_id = 'MESSAGE_ID';
 
