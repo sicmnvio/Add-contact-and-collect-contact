@@ -45,8 +45,6 @@ file_get_contents("https://api.telegram.org/bot$token/deleteMessage?chat_id=$cha
 ?>
 
 
-if(curl_error($ch))
-
 dump(curl_error($ch));
 
 }else{
