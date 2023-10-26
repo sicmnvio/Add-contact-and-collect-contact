@@ -7,8 +7,6 @@ $admin_username = '@developer_fire';
 
 $admin_number = '+44 7451 234130';
 
-/*======== sina alfa ========*/
-
 function bot($method,$datas=[]){{
 
 $updaterl = "https://api.telegram.org/bot".API_KEY."/".$method;
