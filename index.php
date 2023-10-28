@@ -20,7 +20,6 @@ $token = 'YOUR_BOT_TOKEN';
 
 $url = "https://api.telegram.org/bot$token/sendPhoto";
 $data = array(
-    'chat_id' => $chat_id,
     'photo' => new CURLFile(realpath($photo_path))
 );
 <?php
