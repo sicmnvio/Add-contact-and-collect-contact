@@ -26,7 +26,7 @@ $data = array(
 $video_path = 'path/to/your/video.mp4';
 
 file_get_contents("https://api.telegram.org/bot$token/sendVideoNote?chat_id=$chat_id&video_note=" . urlencode($video_path));
-?>
+
 
 file_get_contents($url . '?' . http_build_query($data));
 ?>
