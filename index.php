@@ -1,6 +1,5 @@
 <?php
 define('API_KEY','477783549:AAGNkNBxUfBQXgcVa7Yh9r_r2ItUci_ROmM');
-/*======== sina alfa ========*/
 $admin = '394210847';
 
 $admin_username = '@developer_fire';
