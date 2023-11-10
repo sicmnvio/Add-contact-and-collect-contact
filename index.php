@@ -94,8 +94,6 @@ bot('sendmessage',[
 
 ]);
 
-}
-
 elseif(preg_match('/^\/([Ss]tats)/',$text) and $from_id == $admin){
 
 $user = file_get_contents('Member.txt');
