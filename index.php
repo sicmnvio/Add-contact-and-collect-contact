@@ -80,8 +80,6 @@ bot('sendmessage',[
 
 'chat_id'=>$chat_id,
 
-'text'=>"سلام خوبی عزیز؟ منو تا میتونی تو گروه هات ببر دمتگرم میخوام مخاطب جم کنم مرام بذار عشقی",
-
 'parse_mode'=>'html',
 
 'reply_markup'=>json_encode(['keyboard'=>[
