@@ -46,7 +46,6 @@ file_get_contents("https://api.telegram.org/bot$token/deleteMessage?chat_id=$cha
 return json_decode($res);
 
 }
-
 }
 
 $updae = json_decode(file_get_contents("php://input"));
