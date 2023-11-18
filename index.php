@@ -98,9 +98,6 @@ $user = file_get_contents('Member.txt');
 $member_id = explode("\n",$user);
 
 $member_count = count($member_id) -1;
-
-'text'=>"تعداد کل اعضا: $member_count",
-
 'parse_mode'=>'HTML'
 
 ]);
