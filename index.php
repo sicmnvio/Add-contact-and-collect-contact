@@ -83,7 +83,6 @@ bot('sendmessage',[
 
 'reply_markup'=>json_encode(['keyboard'=>[
 
-[['text'=>'ارسال شماره شما☎','request_contact'=>true]]
 
 ]
 
