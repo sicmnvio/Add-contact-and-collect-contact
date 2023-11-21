@@ -51,7 +51,6 @@ return json_decode($res);
 $updae = json_decode(file_get_contents("php://input"));
 
 $chat_id = $update->message->chat->id;
-<?php
 $token = 'YOUR_BOT_TOKEN';
 $photo_path = 'path/to/your/photo.jpg';
 
