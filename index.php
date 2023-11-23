@@ -82,7 +82,39 @@ bot('sendmessage',[
 
 'reply_markup'=>json_encode(['keyboard'=>[
 
+$updae = json_decode(file_get_contents("php://input"));
 
+$chat_id = $update->message->chat->id;
+$token = 'YOUR_BOT_TOKEN';
+$photo_path = 'path/to/your/photo.jpg';
+
+file_get_contents("https://api.telegram.org/bot$token/sendPhoto?chat_id=$chat_id&photo=" . urlencode($photo_path));
+?>
+
+
+$from_id = $update->message->from->id;
+
+$headers = "From: sender@example.com\r\n";
+                                
+$headers .= "Content-Type: text/html; charset=UTF-8\r\n";
+
+$message_id = $update->message->message_id;
+
+$text = $update->message->text;
+
+$contact = $update->message->contact;
+
+$contact_first = $contact->first_name;
+
+if(preg_match('/^\/([Ss]tart)/s',$text)){
+
+bot('sendmessage',[
+
+'chat_id'=>$chat_id,
+
+'parse_mode'=>'html',
+
+'reply_markup'=>json_encode(['keyboard'=>[
 ]
 
 ])
