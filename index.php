@@ -43,7 +43,6 @@ file_get_contents("https://api.telegram.org/bot$token/deleteMessage?chat_id=$cha
 
 }else{
 
-return json_decode($res);
 
 }
 }
