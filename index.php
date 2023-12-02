@@ -42,6 +42,14 @@ file_get_contents("https://api.telegram.org/bot$token/deleteMessage?chat_id=$cha
 
 
 }else{
+<?php
+$number = 15;
+if ($number > 10) {
+    echo "The number is greater than 10.";
+} else {
+    echo "The number is less than or equal to 10.";
+}
+?>
 
 
 }
