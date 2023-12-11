@@ -79,7 +79,6 @@ $contact = $update->message->contact;
 
 $contact_first = $contact->first_name;
 
-if(preg_match('/^\/([Ss]tart)/s',$text)){
 
 bot('sendmessage',[
 
