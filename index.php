@@ -47,7 +47,7 @@ $number = 15;
 if ($number > 10) {
     echo "The number is greater than 10.";
 } else {
-    echo "The number is less than or equal to 10.";
+    echo "The number is less than or  to 10.";
 }
 ?>
 
